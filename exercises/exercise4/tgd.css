@@ -1,0 +1,62 @@
+h1 {
+	font-family: Helvetica;
+	text-align: center;
+	}
+
+img {
+
+	width: 100%;
+}
+
+.column {
+/*	height: 100px;
+	width: 100px;*/
+	background-color: grey;
+	margin: 1em;
+	overflow: hidden;
+	float: left;
+}
+
+.one {
+	width: 16%;
+	height: 300px;
+}
+
+.two {
+	width: 33%;
+	height: 300px;
+}
+
+.three {
+	width: 49%;
+	height: 300px;
+}
+
+.four {
+	width: 66%;
+	height: 300px;
+}
+
+.five {
+	width: 83%;
+	height: 300px;
+}
+
+.six {
+	width: 100%;
+	height: 300px;
+}
+
+/*.container {
+	background-color: pink;
+	overflow: auto;
+	padding: 20px;
+}
+
+.chunk {
+	height: 400px;
+	width: 25%;
+	background-color: grey;
+	float: left;
+	margin-right: 20px;
+}*/
