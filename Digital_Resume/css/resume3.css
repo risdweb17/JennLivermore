@@ -4,6 +4,9 @@ html {
 	letter-spacing: .02em;
 }
 
+/*body {
+	*/background-image: url("img/Z.jpg");
+}
 /*.image1 {
 	width: 20%;
 	height: auto;
@@ -11,13 +14,22 @@ html {
 	z-index: -10;
 }*/
 
-.image2 {
-	width: 20%;
+.information {
+	display: flex;
+}
+
+.Z {
+	flex: none;
+	width: 300px;
+	position: fixed;
+}
+
+/*img {
+	width: 100%;
 	position: fixed;
 	margin-top: -10px;
 	z-index: -10;
-	opacity: 0.1;
-}
+}*/
 
 h1 {
 	margin-left: 5%;
@@ -27,7 +39,11 @@ h1 {
 .Links_1 {
 	color: #4495d1;
 	margin-right: 5%;
-	margin-left: 20%;
+	margin-left: 30%;
+}
+
+.extraspace {
+	letter-spacing: .5em;
 }
 
 a {
@@ -36,7 +52,7 @@ a {
 }
 
 div div {
-	margin-left: 20%;
+	margin-left: 30%;
 	margin-right: 10%;
 }
 
@@ -44,11 +60,12 @@ div div {
 	letter-spacing: .7em; 
 	margin-bottom: -.25em;
 	margin-top: 4em;
+	flex: 1;
 }
 
 hr {
 	margin-bottom: 2em;
-	margin-left: 20%;
+	margin-left: 30%;
 	margin-right: 10%;
 }
 
