@@ -1,0 +1,63 @@
+html {
+	font-family: Avenir, 'Noto Sans', sans-serif;
+	font-size: 1em;
+	letter-spacing: .02em;
+}
+/*
+img {
+	width: 30%;
+	position: fixed;
+	float: left;
+}*/
+
+h1 {
+	margin-left: 5%;
+	margin-top: 7%;
+}
+
+.Links_1 {
+	color: #4495d1;
+	margin-right: 5%;
+	margin-left: 20%;
+}
+
+a {
+	text-decoration: none;
+	color: #4495d1;
+}
+
+div div {
+	margin-left: 20%;
+	margin-right: 10%;
+}
+
+.Categories {
+	letter-spacing: .7em; 
+	margin-bottom: -.25em;
+	margin-top: 4em;
+}
+
+hr {
+	margin-bottom: 2em;
+	margin-left: 20%;
+	margin-right: 10%;
+}
+
+.Name {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.Description {
+	display: inline-block;
+	color: #4495d1;
+}
+
+.Location {
+	font-style: italic;
+	color: grey;
+}
+
+.Text {
+	margin-bottom: 2em;
+}
