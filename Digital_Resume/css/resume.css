@@ -4,23 +4,29 @@ html {
 	letter-spacing: .02em;
 }
 
-/*.image1 {
-	width: 20%;
-	height: auto;
-	position: fixed;
-	z-index: -10;
-}*/
+body {
+	background-image: url("../img/Z_transparent.jpg");
+	background-position: 70% 70%;
+	background-repeat: none;
+	background-attachment: fixed;
+	background-size: 100%;
+}
 
-.image2 {
-	width: 20%;
-	position: fixed;
-	margin-top: -10px;
-	z-index: -10;
-	opacity: 0.1;
+@media (max-width: 890px) {
+  body {
+    background-size: 150%;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 660px) {
+  h1 {
+  	font-size: 1.7em;
+  }
 }
 
 h1 {
-	margin-left: 5%;
+	margin-left: 9%;
 	margin-top: 7%;
 }
 
@@ -35,9 +41,10 @@ a {
 	color: #4495d1;
 }
 
-div div {
+.container {
 	margin-left: 20%;
-	margin-right: 10%;
+	margin-right: 20%;
+	margin-bottom: 20em;
 }
 
 .Categories {
@@ -48,8 +55,6 @@ div div {
 
 hr {
 	margin-bottom: 2em;
-	margin-left: 20%;
-	margin-right: 10%;
 }
 
 .Name {

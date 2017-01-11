@@ -4,8 +4,9 @@ html {
 	letter-spacing: .02em;
 }
 
-/*body {
-	*/background-image: url("img/Z.jpg");
+body {
+	background-image: url("../img/Z.jpg");
+	background-repeat: none;
 }
 /*.image1 {
 	width: 20%;
