@@ -1,0 +1,30 @@
+html {
+	font-family: Helvetica;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+}
+
+input {
+	background-color: #ffffff; /* blue */
+    border: 1px solid lightgrey;
+    color: black;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .7em;
+    border-radius: 15%;
+    margin-top: .5%;
+}
+
+/*input:hover {
+	padding: 2em;
+	font-size: 1.5em;
+}*/
+
+.container {
+	margin-left: 3%;
+	margin-right: 3%;
+}
