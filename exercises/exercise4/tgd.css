@@ -4,40 +4,23 @@ h1 {
 	}
 
 img {
-
 	width: 100%;
 }
 
-.column {
-/*	height: 100px;
-	width: 100px;*/
-	background-color: grey;
-/*	margin: 1em;
-	overflow: hidden;
-	float: left;*/
-}
-/*
-.one {
-	width: 16%;
-	height: 300px;
-	box-sizing: border-box;
-}
-*/
-
-.container {
+.row {
 	display: flex;
 }
 
+.column {
+	height: 100%;
+	padding: 1em;
+}
+
 .two {
-	width: 33%;
-	height: 300px;
 	flex: 2; 
 }
 
 .three {
-	width: 49%;
-	height: 300px;
-	box-sizing: border-box;
 	flex: 1;
 }
 
@@ -69,3 +52,13 @@ img {
 	float: left;
 	margin-right: 20px;
 }*/
+
+@media screen and (max-width: 700px){
+	.row {
+		display: block;
+	}
+
+	.three {
+		padding: 0;
+	}
+}

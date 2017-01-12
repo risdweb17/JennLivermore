@@ -1,0 +1,81 @@
+
+.container {
+	display: flex;
+}
+
+.column {
+	width: 50px;
+	margin: .5em;
+	flex: 1;
+}
+
+.one {
+	border-top: 30px solid lightgreen;
+}
+
+.two {
+	border-top: 20px solid blue;
+}
+
+.three {
+	border-top: 50px solid pink;
+	margin-top: 3em;
+}
+
+.four {
+	border-top: 70px solid aqua;
+	margin-top: 5em;
+}
+
+.five {
+	border-top: 10px solid green;
+	margin-top: 2em;
+}
+
+.six {
+	border-top: 50px solid teal;
+	margin-top: 1em;
+}
+
+.seven {
+	border-top: 20px solid red;
+	margin-top: .5em;
+}
+
+.eight {
+	border-top: 10px solid grey;
+}
+
+.nine {
+	border-top: 70px solid orange;
+	margin-top: .5em;
+}
+
+.ten {
+	border-top: 40px solid lightblue;
+	margin-top: 7em;
+}
+
+.eleven {
+	border-top: 20px solid yellow;
+	margin-top: 2em;
+}
+
+.twelve {
+	border-top: 13px solid black;
+	margin-top: .5em;
+}
+
+.position_one {
+	position: absolute;
+}
+
+.position_two {
+	position: fixed;
+}
+
+/*.position_three {
+	position: absolute;
+	margin-left: 10em;
+	margin-right: 10em;
+}*/
