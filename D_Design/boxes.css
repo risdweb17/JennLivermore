@@ -68,10 +68,12 @@
 
 .position_one {
 	position: absolute;
+	width: 100%;
 }
 
 .position_two {
 	position: fixed;
+	width: 100%;
 }
 
 /*.position_three {
