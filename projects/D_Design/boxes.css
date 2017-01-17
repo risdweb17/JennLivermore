@@ -71,6 +71,10 @@
 	width: 100%;
 }
 
+/*.position_two:hover {
+	transform: rotate(-30deg);
+}*/
+
 .position_two {
 	position: fixed;
 	width: 100%;
