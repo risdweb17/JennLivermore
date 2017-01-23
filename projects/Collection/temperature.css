@@ -1,0 +1,80 @@
+.container {
+	height: 100vh;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(234deg, #e05700, #e09c00, #ffffff, #62c9e5);
+	background-size: 300% 300%;
+	animation: gradient 20s ease infinite;
+}
+
+.home {
+	color: white;
+	margin-top: 35vh;
+	margin-bottom: 40px;
+	font-family: 'Lato', sans-serif;
+	font-size: 5vh;
+	text-align: center;
+	letter-spacing: .2em;
+	line-height: 7vh;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	letter-spacing: .2em;
+}
+
+button {
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px;
+	color: white;
+	border: 2px solid white;
+	border-radius: 7%;
+	background-color: transparent;
+}
+
+.box {
+	height: 80vh;
+	width: auto;
+	margin: 0% 10% 10% 10%;
+/*	align-items: center;
+*/}
+
+img {
+	position: fixed;
+	width: 25px;
+	margin-top: -105px;
+	margin-left: 10px;
+}
+
+h1 {
+	margin: 15% 20% 5% 20%;
+	text-align: center;
+}
+
+.year {
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	background-color: lightblue;
+	float: left;
+	margin: 5%;
+	transition: all .2s ease-in-out;
+}
+
+.year:hover {
+	transform: scale(5);
+}
+
+/* ANIMATIONS */
+
+@keyframes gradient { 
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
