@@ -69,6 +69,7 @@
 .position_one {
 	position: absolute;
 	width: 100%;
+	opacity: .8;
 }
 
 /*.position_two:hover {
@@ -78,6 +79,7 @@
 .position_two {
 	position: fixed;
 	width: 100%;
+	opacity: .8;
 }
 
 /*.position_three {
