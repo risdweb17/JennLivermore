@@ -108,6 +108,7 @@ header {
 		float: left;
 		margin: .3%;
 		transition: all .2s ease-in-out;
+		align-self: flex-end;
 	}
 
 	.year:hover {
