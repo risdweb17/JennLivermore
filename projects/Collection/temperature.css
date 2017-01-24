@@ -1,5 +1,11 @@
 /* all */
+body {
+	margin: 0;
+}
 
+div {
+	margin: 0;
+}
 
 /* temperature1 */
 .container {
@@ -8,9 +14,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: linear-gradient(234deg, #e05700, #e09c00, #ffffff, #62c9e5);
+	background: linear-gradient(234deg, #ffffff, #ffffff, #62c9e5, #2c3d91, #2c3d91);
 	background-size: 300% 300%;
-	animation: gradient 20s ease infinite;
+	animation: gradient 20s infinite;
 }
 
 .home {
@@ -24,65 +30,239 @@
 	line-height: 7vh;
 }
 
-a {
-	text-decoration: none;
+/*button*/
+.enter {
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
 	letter-spacing: .2em;
-}
-
-button {
-	text-decoration: none;
 	text-align: center;
 	padding: 10px 20px;
-	color: white;
 	border: 2px solid white;
 	border-radius: 7%;
 	background-color: transparent;
 }
 
-/* temperature2 */
+a {
+	text-decoration: none;
+}
 
-header {
+/* temperature2 */
+img {
+	width: 22px;
 	position: fixed;
 	margin-top: 2%;
 	margin-left: 2%;
 }
 
-.box {
-	height: 80vh;
-	width: auto;
-	margin: 20% 10% 10% 10%;
+header {
+	height: 25vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
-img {
-	width: 22px;
-	margin-bottom: 30px;
-}
-
 
 .caption {
-/*	margin-top: 5%;
-*/	font-family: 'Lato', sans-serif;
-	font-size: .75em;
-	letter-spacing: .1em;
-/*	position: fixed;
-*/}
-
-.year {
-	height: 30px;
-	width: 30px;
-	border-radius: 100%;
-	background-color: lightblue;
-	float: left;
-	margin: 5%;
-	transition: all .2s ease-in-out;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	letter-spacing: .05em;
+	padding-top: 3em;
+	color: #2c3d91;
 }
 
-.year:hover {
-	transform: scale(5);
+.caption:hover {
+	color: #3ecade;
 }
+
+/*data*/
+	.data {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Lato', sans-serif;
+		font-size: 2em;
+		margin-bottom: 2em;
+		margin-top: .5em;
+	}
+
+	.y {
+		opacity: 0;
+		position: absolute;
+		text-align: center;
+		color: #2c3d91;
+	}
+
+/*box*/
+	.box {
+		height: auto;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.year {
+		width: 1.3vw;
+		background: linear-gradient(180deg, #bbecfa, #3052b1);
+		float: left;
+		margin: .3%;
+		transition: all .2s ease-in-out;
+	}
+
+	.year:hover {
+		transform: scale(1.05);
+	}
+
+
+	.year.i {
+		height: 35.95vh;
+	}
+
+	.year.ii {
+		height: 39.15vh;
+	}
+
+	.year.iii {
+		height: 36.2vh;
+	}
+
+	.year.iv {
+		height: 37.2vh;
+	}
+
+	.year.v {
+		height: 37.55vh;
+	}
+
+	.year.vi {
+		height: 35.5vh;
+	}
+
+	.year.vii {
+		height: 34.55vh;
+	}
+
+	.year.viii {
+		height: 37.65vh;
+	}
+
+	.year.ix {
+		height: 37.35vh;
+	}
+
+	.year.x {
+		height: 37.4vh;
+	}
+
+	.year.xi {
+		height: 35.15vh;
+	}
+
+	.year.xii {
+		height: 31.15vh;
+	}
+
+	.year.xiii {
+		height: 32.7vh;
+	}
+
+	.year.xiv {
+		height: 37.7vh;
+	}
+
+	.year.xv {
+		height: 32.5vh;
+	}
+
+	.year.xvi {
+		height: 35.9vh;
+	}
+
+	.year.xvii {
+		height: 30.6vh;
+	}
+
+	.year.xviii {
+		height: 39.35vh;
+	}
+
+	.year.xix {
+		height: 33.65vh;
+	}
+
+	.year.xx {
+		height: 32.75vh;
+	}
+
+	.year.xxi {
+		height: 31.15vh;
+	}
+
+	.year.xxii {
+		height: 31.55vh;
+	}
+
+	.year.xxiii {
+		height: 33.7vh;
+	}
+
+	.year.xxiv {
+		height: 29.75vh;
+	}
+
+	.year.xxv {
+		height: 30.65vh;
+	}
+
+	.year.xxvi {
+		height: 30.2vh;
+	}
+
+	.year.xxvii {
+		height: 27.8vh;
+	}
+
+	.year.xxviii {
+		height: 29.55vh;
+	}
+
+	.year.xxix {
+		height: 21.45vh;
+	}
+
+	.year.xxx {
+		height: 23.6vh;
+	}
+
+	.year.xxxi {
+		height: 26.9vh;
+	}
+
+	.year.xxxii {
+		height: 24.6vh;
+	}
+
+	.year.xxxiii {
+		height: 23.05vh;
+	}
+
+	.year.xxxiv {
+		height: 18.1vh;
+	}
+
+	.year.xxxv {
+		height: 26.75vh;
+	}
+
+	.year.xxxvi {
+		height: 26.4vh;
+	}
+
+	.year.xxxvii {
+		height: 23.15vh;
+	}
+
 
 /* ANIMATIONS */
 
