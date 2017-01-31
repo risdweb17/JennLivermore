@@ -7,15 +7,31 @@
 }
 
 .container {
-	height: 1000px;
-	width: 1000px;
+	height: 700px;
+	width: 700px;
 	overflow: scroll;
 	position: relative;
 }
 
+.two {
+	height: 300px;
+	width: 300px;
+	overflow: scroll;
+	position: relative;
+	float: left;
+}
+
+.three {
+	height: 100px;
+	width: 100px;
+	overflow: scroll;
+	position: relative;
+	float: right;
+}
+
 img {
 	position: absolute;
-	height: 80vh;
+/*	height: 80vh;*/
 }
 
 .square {

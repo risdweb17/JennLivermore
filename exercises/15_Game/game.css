@@ -1,0 +1,28 @@
+body {
+	font-family: Helvetica;
+	color: green;
+}
+
+h1 {
+	text-align: center;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+div {
+	margin: 30px;
+}
+
+#box {
+	height: 75px;
+	width: auto;
+	border: 1px solid green;
+}
+

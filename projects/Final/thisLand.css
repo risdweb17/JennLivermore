@@ -1,0 +1,18 @@
+body {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: auto;
+
+	color: darkgreen;
+	font-family: Garamond;
+	font-size: 1.5em;
+}
+
+.column {
+	width: 33vw;
+}
+
+.img {
+	width: 300px;
+}
