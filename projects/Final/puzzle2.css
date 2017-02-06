@@ -1,89 +1,233 @@
-/* ALL */
+/* - - - ALL - - - - - - - - - - - - - - - - - - - - - */
 body {
 	font-family: 'Roboto Mono', monospace;
-	display: none;
 }
 
-h1 {
-	margin-left: 50%;
+.right { /* Header */
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 5%;
+}
+
+h1 { /* Header */
 	position: fixed;
+	animation: fade-in 3.5s;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.alttruth, .alttext { /* Header */
+	text-decoration: underline;
 }
 
 p {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
 	flex: 1 100%;
-	margin-left: 10%;
+	/*margin-left: 10%;*/
  }
 
-footer {
+footer { /* Bottom Navigation Arrow */
 	width: 100%;
 	height: 5em;
 	position: fixed;
 	bottom: 0;
-	left: 0;}
-.forward {
+	left: 0;
+	animation: fade-in 3.5s;}
+.forward { /* Bottom Navigation Arrow */
 	float: right;
-	margin-right: 1em;
+	margin-right: 1.15em;
 	text-decoration: none;
 	color: black;
-	font-size: 3em;
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 300;
+	font-size: 2.5em;
 	transition: all .2s ease-in-out;}
-.forward:hover {
+.forward:hover { /* Bottom Navigation Arrow */
 	transform: scale(1.2);
-	color: cyan;}
+}
 
-/* PAGE ONE */
+/* - - - PAGE ONE  - - - - - - - - - - - - - - - - - - */
 .flex {
 	display: flex; 
 	justify-content: center;
-/*	align-items: center;
-*/}
+}
 
 #bigContainer {
- 	height: 350px;
-	width: 370px;
+ 	height: 375px;
+	width: 400px;
 	overflow: scroll;
 	border: 1px solid black;
-	margin-top: 15%
+	margin-top: 14%;
+	animation: fade-in 3.5s;
+	line-height: 1.75em;
  }
 
-.intro {
+.intro { /* main text */
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
 	margin: 5%;
  }
 
-.introW {
+.introW { /* main text (white) */
  	font-family: 'Roboto Mono', monospace;
  	color:white;
  	margin: 5%;
+ 	line-height: 1em;
  }
 
-/* PAGE TWO */
+ .intro a { /* link styles*/
+ 	color: black;
+ 	text-decoration: none;
+ 	border-bottom: 1px dashed black;
+ }
+
+ strong {
+ 	font-weight: 500;
+ 	text-transform: uppercase;
+ 	letter-spacing: .2em;
+ 	color: black;
+ }
+
+.highlight {
+	background-color: #e8fcc7;
+}
+
+/* - - - PAGE TWO  - - - - - - - - - - - - - - - - - - */
 .box {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 10%;
-	margin-left: 5%;
-	margin-right: 30%;
-	padding-top: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 7em;
+	padding-bottom: 4em;
+	width: 70%;
 }
 
 .container {
 	height: 250px;
 	width: 250px;
 	overflow: scroll;
-	float: left;
-/*	position: absolute;
-*/}
+}
+
+.come-in {
+	transform: translateX(-100vw);
+	animation: come-in 2s ease forwards;
+	animation-delay: .5s;
+}
+
+.tall {
+	height: 7em;
+}
+.down {
+	float: right;
+	margin-right: 1em;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+	transition: all .2s ease-in-out;
+	clear: both;
+	cursor: pointer;
+	margin-top: -.25em;
+}
+.down:hover { /* Bottom Navigation Arrow */
+	transform: scale(1.2);
+}
+.up {
+	display: none;
+	float: right;
+	margin-right: 1em;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+	transition: all .2s ease-in-out;
+	clear: both;
+	cursor: pointer;
+	margin-top: -.25em;
+}
+.up:hover { /* Bottom Navigation Arrow */
+	transform: scale(1.2);
+}
 
 img {
-	width: 1000px;
+	transition: all .7s ease-in-out;
+}
 
- }
+img:hover {
+	transform: scale(1.05);
+}
 
- 
+@keyframes come-in {
+	to { transform: translateX(0)};
+}
+
+@keyframes fade-in {
+	from {opacity: 0};
+	to {opacity: 1};
+	}
+
+/*@keyframes fly-up {
+	from {transform: translate(0, 100vh)};	
+	to {transform: translate(0, -100vh)};
+}*/
+
+/* - - - PAGE TWO IMAGE SIZING  - - - - - - - - - - - - */
+#one img {width: 940px;}
+
+#two img {width: 600px;}
+
+#three img {width: 550px;}
+
+#four img {width: 1010px;}
+
+#five img {width: 750px;}
+
+#six img {width: 1100px;}
+
+#seven img {width: 1100px;}
+
+#eight img {width: 700px;}
+
+#nine img {width: 900px;}
+
+#ten img {width: 940px;}
+
+#eleven img {width: 900px;}
+
+#twelve img {width: 900px;}
+
+#thirteen img {width: 1000px;}
+
+#fourteen img {width: 900px;}
+
+#fifteen img {width: 1000px;}
+
+#sixteen img {width: 1000px;}
+
+#seventeen img {width: 1300px;}
+
+#eighteen img {width: 950px;}
+
+
+/* - - - RESPONSIVE  - - - - - - - - - - - - - - - - - - */
+@media screen and (max-device-width: 800px) {
+	.right { 
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+/*	.container { 
+		height: 350px;
+		width: 350px; 
+	}
+	img {
+		transform: scale(1.7);
+	}*/
+	.box {
+		padding-bottom: 5em;
+		width: 60%;
+	}
+}
+
+/*@media screen and (max-device-width: 1500px) {
+	.box {
+		width: 75%;
+	}
+}*/

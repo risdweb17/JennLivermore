@@ -1,50 +1,277 @@
 
+
+// SLIDE IN ON SCROLL DIVS///////////////////////////////////
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+$(window).scroll(function(event) {
+  
+  $(".box.slide").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+ });
+
+// SLIDE IN ON LOAD DIV///////////////////////////////////
+$(document).ready(function(event) {
+  $(".ag").addClass("come-in"); 
+  });
+
+
+// UNDERLINE TRUTH / ALT TRUTH ON CLICK ///////////////////////////////////
+$(document).ready(function(){
+	$('.truth').click(function(){
+		$('.truth').css('text-decoration', 'underline');
+		$('.alttruth').css('text-decoration', 'none');
+	});
+});
+
+$(document).ready(function(){
+	$('.alttruth').click(function(){
+		$('.alttruth').css('text-decoration', 'underline');
+		$('.truth').css('text-decoration', 'none');
+	});
+});
+
+// SCROLL IMAGES ON LOAD ///////////////////////////////////
+	$(window).load(function(){
+
+	$('#one').scrollTop(1);
+	$('#one').scrollLeft(1);
+
+	$('#two').scrollTop(50);
+	$('#two').scrollLeft(500);
+
+	$('#three').scrollTop(1);
+	$('#three').scrollLeft(300);
+
+	$('#four').scrollTop(500);
+	$('#four').scrollLeft(305);
+
+	$('#five').scrollTop(160);
+	$('#five').scrollLeft(1);
+
+	$('#six').scrollTop(1);
+	$('#six').scrollLeft(1);
+
+	$('#seven').scrollTop(1);
+	$('#seven').scrollLeft(1);
+
+	$('#eight').scrollTop(200);
+	$('#eight').scrollLeft(460);
+
+	$('#nine').scrollTop(130);
+	$('#nine').scrollLeft(370);
+
+	$('#ten').scrollTop(600);
+	$('#ten').scrollLeft(600);
+
+	$('#eleven').scrollTop(70);
+	$('#eleven').scrollLeft(170);
+
+	$('#twelve').scrollTop(1);
+	$('#twelve').scrollLeft(160);
+
+	$('#thirteen').scrollTop(1);
+	$('#thirteen').scrollLeft(1);
+
+	$('#fourteen').scrollTop(1);
+	$('#fourteen').scrollLeft(130);
+
+	$('#fifteen').scrollTop(1);
+	$('#fifteen').scrollLeft(480);
+
+	$('#sixteen').scrollTop(300);
+	$('#sixteen').scrollLeft(660);
+
+	$('#seventeen').scrollTop(1);
+	$('#seventeen').scrollLeft(1);
+
+	$('#eighteen').scrollTop(500);
+	$('#eighteen').scrollLeft(400);
+	});
+
+// SCROLL ON CLICK ///////////////////////////////////
+$(document).ready(function(){
+	$('.truth').click(function(){
+		$('#one').animate({ scrollTop: 280, scrollLeft: 500 }, 1000);
+		$('#two').animate({ scrollTop: 400, scrollLeft: 1 }, 1000); /*first*/
+		$('#three').animate({ scrollTop: 1, scrollLeft: 50 }, 1000);
+		$('#four').animate({ scrollTop: 60, scrollLeft: 380 }, 1000); /*first*/
+		$('#five').animate({ scrollTop: 60, scrollLeft: 355 }, 1000);
+		$('#six').animate({ scrollTop: 300, scrollLeft: 730 }, 1000);
+		$('#seven').animate({ scrollTop: 150, scrollLeft: 500 }, 1000);
+		$('#eight').animate({ scrollTop: 40, scrollLeft: 400 }, 1000); 
+		$('#nine').animate({ scrollTop: 200, scrollLeft: 570 }, 1000);
+		$('#ten').animate({ scrollTop: 190, scrollLeft: 300 }, 1000);
+		$('#eleven').animate({ scrollTop: 0, scrollLeft: 700 }, 1000);
+		$('#twelve').animate({ scrollTop: 230, scrollLeft: 100 }, 1000);
+		$('#thirteen').animate({ scrollTop: 260, scrollLeft: 380 }, 1000);
+		$('#fourteen').animate({ scrollTop: 260, scrollLeft: 650 }, 1000);
+		$('#fifteen').animate({ scrollTop: 100, scrollLeft: 160 }, 1000);
+		$('#sixteen').animate({ scrollTop: 300, scrollLeft: 80 }, 1000);	
+		$('#seventeen').animate({ scrollTop: 600, scrollLeft: 300 }, 1000);
+		$('#eighteen').animate({ scrollTop: 290, scrollLeft: 175 }, 1000);
+	});
+});
+
+$(document).ready(function(){
+	$('.alttruth').click(function(){
+		$('#one').animate({ scrollTop: 1, scrollLeft: 1 }, 1000);
+		$('#two').animate({ scrollTop: 50, scrollLeft: 500 }, 1000); /*first*/
+		$('#three').animate({ scrollTop: 1, scrollLeft: 300 }, 1000);
+		$('#four').animate({ scrollTop: 500, scrollLeft: 305 }, 1000); /*first*/
+		$('#five').animate({ scrollTop: 160, scrollLeft: 1 }, 1000);
+		$('#six').animate({ scrollTop: 1, scrollLeft: 1 }, 1000);
+		$('#seven').animate({ scrollTop: 1, scrollLeft: 1 }, 1000);
+		$('#eight').animate({ scrollTop: 200, scrollLeft: 460 }, 1000); 
+		$('#nine').animate({ scrollTop: 130, scrollLeft: 370 }, 1000);
+		$('#ten').animate({ scrollTop: 600, scrollLeft: 600 }, 1000);
+		$('#eleven').animate({ scrollTop: 70, scrollLeft: 170 }, 1000);
+		$('#twelve').animate({ scrollTop: 1, scrollLeft: 160 }, 1000);
+		$('#thirteen').animate({ scrollTop: 1, scrollLeft: 1 }, 1000);
+		$('#fourteen').animate({ scrollTop: 1, scrollLeft: 130 }, 1000);
+		$('#fifteen').animate({ scrollTop: 1, scrollLeft: 480 }, 1000);
+		$('#sixteen').animate({ scrollTop: 300, scrollLeft: 660 }, 1000);	
+		$('#seventeen').animate({ scrollTop: 1, scrollLeft: 1 }, 1000);
+		$('#eighteen').animate({ scrollTop: 500, scrollLeft: 400 }, 1000);
+	});
+});
+
+// SCROLL INTRO ON LOAD ///////////////////////////////////
+$(document).ready(function(){
+	$('#bigContainer').scrollTop(680);
+});
+
+// SCROLL INTRO ON CLICK ///////////////////////////////////
+$(document).ready(function(){
+	$('.alttext').click(function(){
+		$('#bigContainer').animate({ scrollTop: 680}, 1000);
+	});
+});
+
+$(document).ready(function(){
+	$('.text').click(function(){
+		$('#bigContainer').animate({ scrollTop: 0}, 1000);
+	});
+});
+
+// UNDERLINE TEXT / ALT TEXT ON CLICK ///////////////////////////////////
+$(document).ready(function(){
+	$('.text').click(function(){
+		$(this).setTimeout(500);
+		$('.text').css('text-decoration', 'underline');
+		$('.alttext').css('text-decoration', 'none');
+	});
+});
+
+$(document).ready(function(){
+	$('.alttext').click(function(){
+		$(this).setTimeout(500);
+		$('.alttext').css('text-decoration', 'underline');
+		$('.text').css('text-decoration', 'none');
+	});
+});
+
+// SWITCH UNDERLINED TITLE ON SCROLL ///////////////////////////////////
+$(document).ready(function(){
+$('#bigContainer').scroll(function(){
+    if($('#bigContainer').scrollTop() > 500)
+    {   
+        $('.alttext').css('text-decoration', 'underline');
+		$('.text').css('text-decoration', 'none');
+    }
+
+    else if($('#bigContainer').scrollTop() < 500)
+    {   
+        $('.text').css('text-decoration', 'underline');
+		$('.alttext').css('text-decoration', 'none');
+    }
+	});
+});
+
+// NAV SCROLL ///////////////////////////////////
+$(document).ready(function(){
+	$('.down').click(function(){
+		$('body').animate({ scrollTop: '+=790'}, 1000);
+	});
+	$('.up').click(function(){
+		$('body').animate({ scrollTop: 0}, 1000);
+	});
+});
+
+$(document).ready(function(){
+	$(window).scroll(function() {
+
+	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	       console.log("we at the bottom");
+	       $('.down').hide();
+		   $('.up').show();
+	   }else{
+	   	   $('.down').show();
+	   	   $('.up').hide();
+	   }
+	});
+});
+
+// GRAVEYARD OF SADNESS ///////////////////////////////////
+
 // $(document).ready(function(){
-// 	$('h1').bind('click', function(){
-// 	$('#one').scrollLeft(500)
-// 	$('h1').unbind('click');
-// 	});
+// 	if ( !$(".ag").is(":visible") && !$('.truth').is("click")){
+// 		$('#one').animate({ scrollTop: 100, scrollLeft: 100 }, 1000);
+// 	}
 // });
 
-$(document).ready(function() {
-    $('body').fadeIn(2000);
-});
-
-$(document).ready(function(){
-	$('#one').scrollLeft(500)
-	});
-
-$(document).ready(function(){
-	$('h1').click(function(){
-	$('#one').scrollLeft(100)
-	$('#one').scrollTop(100)
-	$('h1').css('text-decoration', 'underline')
-	});
-});
+// $(document).ready(function(){
+// if (!$('.alttruth').is("click") && !$(".ag").is(":visible")) {
+//     $('#one').scrollLeft(100);
+// 	$('#one').scrollTop(100);
+// }
+// });
 
 // $(document).ready(function(){
-// 	if 
-// 		$('h1').click(function(){
-// 		$('h1').css('text-decoration', 'underline')
-// 	// else
-// 	// 	$('h1').css('text-decoration', 'none');
-// 		});
-// 	});
-
-	// $('h1').css('text-decoration', 'underline')
+// 	if (!$('.alttruth').click() && !$('.ag').visible(true)) {
+//     $('#one').scrollLeft(100); 
+// 	$('#one').scrollTop(100);
+// }
+// });
 
 
-	//  $('input[name="textStyle"]').change(function(){
- //        if ($(this).val() == 'bold'){
- //            if ($(this).is(':checked')) $('input[name="styledText"]').css('font-weight', 'bold');
- //            else $('input[name="styledText"]').css('font-weight', 'normal');
- //        }
- //        else if ($(this).val() == 'italic'){
- //            if ($(this).is(':checked')) $('input[name="styledText"]').css('font-style', 'italic');
- //            else $('input[name="styledText"]').css('font-style', 'normal');
- //        }
- //        else if ($(this).val() == 'underline'){
- //            if ($(this).is(':checked')) $('input[name="styledText"]').css('text-decoration', 'underline');
- //            else $('input[name="styledText"]').css('text-decoration', 'none');
- //        }
- //    });
+// var altclick = $('.alttruth').is("click");
+// var agvisible = $(".ag").is(":visible");
+
+// $(document).ready(function(){
+// if (!$('altclick') && !$("agvisible")) {
+//     $('#one').scrollLeft(100);
+// 	$('#one').scrollTop(100);
+// }
+// });
