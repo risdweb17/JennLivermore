@@ -19,6 +19,9 @@ input {
     margin-top: .5%;
 }
 
+input:focus {
+	outline: 0;
+}
 /*input:hover {
 	padding: 2em;
 	font-size: 1.5em;
