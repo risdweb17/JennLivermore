@@ -22,6 +22,10 @@ input {
 input:focus {
 	outline: none;
 }
+
+input:active {
+	outline: none;
+}
 /*input:hover {
 	padding: 2em;
 	font-size: 1.5em;
