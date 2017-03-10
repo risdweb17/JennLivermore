@@ -17,7 +17,10 @@ input {
     font-size: .8em;
     border-radius: 15%;
     margin-top: .5%;
-    cursor: pointer;
+}
+
+input:hover {
+	cursor: pointer;
 }
 
 input:focus {
